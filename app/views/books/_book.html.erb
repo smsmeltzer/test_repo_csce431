@@ -1,0 +1,9 @@
+<div id="<%= dom_id book %>">
+  <p>
+    <strong>Title:</strong>
+    <%= book.title %>
+    <strong>Author</strong>
+    <%= Author.find(book.author_id).name %>
+  </p>
+
+</div>
