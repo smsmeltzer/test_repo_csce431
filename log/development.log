@@ -6218,3 +6218,12 @@ Processing by Rails::PwaController#manifest as JSON
 Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mBook Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "books" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mAuthor Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "authors" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mBook Count (3.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "books"[0m
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  [1m[36mAuthor Count (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "authors"[0m
+  [1m[36mAuthor Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "authors"[0m
+  [1m[36mAuthor Load (0.6ms)[0m  [1m[34mSELECT "authors".* FROM "authors" LIMIT $1 OFFSET $2[0m  [["LIMIT", 3], ["OFFSET", 0]]
